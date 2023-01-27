@@ -1,0 +1,27 @@
+h2
+{
+    text-align: center;
+    color: #fff;
+}
+.email-list
+{
+    padding: 0;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+.email-list a
+{
+    background-color: #3e3f46;
+    padding: 1em;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #999;
+    transition: 0.5s
+}
+.email-list a:hover
+{
+    background-color: #33a3ee;
+    color: #fff;
+}

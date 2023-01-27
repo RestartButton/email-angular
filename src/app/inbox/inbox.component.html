@@ -1,0 +1,6 @@
+<h2> INBOX </h2>
+<div class="email-list">
+    <a *ngFor="let email of emails" routerLink="">
+        {{email.source}}: {{email.title}}
+    </a>
+</div>
