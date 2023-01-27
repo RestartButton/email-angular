@@ -1,0 +1,36 @@
+*
+{
+    color: #fff;
+}
+h1
+{
+    text-align: center;
+}
+.email-content span
+{
+    margin: 0 0 0 .5em;
+    font-size: 14px;
+}
+.email-content p
+{
+    padding: 2.5em;
+}
+.bar
+{
+    background-color: #3e3f46;
+}
+.back
+{
+    font-size: 16px;
+    padding: .25em;
+    border: none;
+    border-radius: 50%;
+    background: 0 0;
+    transition: .3s;
+    margin: .75em 0 .75em .75em;
+    width: 1.75em;
+}
+.back:hover
+{
+    background-color: #33a3ee;
+}

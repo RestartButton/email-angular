@@ -17,14 +17,14 @@ export const EMAILS: Email[] = [
         destination: 'teste@ro.mail.com',
     },
     {
-        id: 2,
+        id: 3,
         content: 'teste!',
         title: 'teste',
         source: 'andre@gmail.com',
         destination: 'teste@ro.mail.com',
     },
     {
-        id: 2,
+        id: 4,
         content: 'teste!',
         title: 'teste',
         source: 'andre@gmail.com',

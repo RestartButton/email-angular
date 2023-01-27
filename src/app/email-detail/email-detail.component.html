@@ -1,1 +1,8 @@
-<p>email-detail works!</p>
+<div class="bar">
+    <button type="button" class="back" (click)="goBack()" > &lt; </button>
+</div>
+<div class="email-content" *ngIf="email">
+    <h1>{{email.title}}</h1>
+    <span>{{email.source}} -&gt; {{email.destination}}</span>
+    <p>{{email.content}}</p>
+</div>
