@@ -16,6 +16,7 @@
     <div #bottomBar class="bottom">
         <button class="btnSend" (click)="send()"> SEND </button>
         <div #formatBar class="formatBar">
+            <button #btnClr (click)="format()"> NORMAL </button>
             <button #btnBold (click)="format('strong')"> BOLD </button>
             <button #btnItalic (click)="format('i')"> ITALIC </button>
             <button #btnUnderline (click)="format('u')"> UNDERLINE </button>

@@ -18,13 +18,19 @@ export class WriteComponent implements OnInit, AfterViewInit{
         
     }
 
-    format(tagName:string): void {
+    format(tagName?:string): void {
         this.editor.nativeElement.focus();
         const sel = window.getSelection();
         let range = sel?.getRangeAt(0);
         if(range && range.toString() != ''){
-            let tag = document.createElement(tagName);
-            range?.surroundContents(tag);
+            if(tagName != null && tagName != '') {
+                let tag = document.createElement(tagName);
+                range?.surroundContents(tag);
+            } else {
+                let content = range.toString();
+                range.deleteContents();
+                range.insertNode(document.createTextNode(content));
+            }
         }
     }
 
