@@ -42,6 +42,29 @@ ul li:hover a
     color: #fff;
     padding: 1em;
     margin-bottom: 1.25em;
+    display: flex;
+    flex-direction: row;
+}
+.header h1
+{
+    flex: 0 1 auto;
+}
+.header div
+{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+.header input
+{
+    border: none;
+    background-color: #3e3f46;
+    color: #999;
+    border-radius: 18px;
+    padding: 1em;
+    width: 20em;
+    font-size: 12px;
+    outline: none;
 }
 .content
 {
