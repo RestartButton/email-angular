@@ -1,0 +1,95 @@
+*
+{
+    color: white;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+hr
+{
+    margin:.5em;
+}
+.row
+{
+    display: flex;
+    flex-direction: row;
+}
+.row div
+{
+    flex: 0 1 auto;
+    width: 5% !important;
+}
+.row input
+{
+    flex: 1 1 auto;
+    outline: none;
+    border: none;
+    background-color: #000;
+}
+.draft
+{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+.draft div
+{
+    flex: 0 1 auto;
+}
+.editor
+{
+    flex: 1 1 auto !important;
+    outline: none;
+}
+.bottom
+{
+    display: flex;
+    flex-direction: row;
+}
+.btnSend
+{
+    flex: 0 1 auto;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 0px;
+    background-color: #33a3ee;
+    color: #fff;
+    padding: 0 .5em 0 .5em;
+    transition: .3s;
+}
+.btnSend:hover
+{
+    background-color: #60b9f5;
+    box-shadow: 0 5px 15px rgba(96, 185, 245, .4);
+}
+.formatBar
+{
+    flex: 1 1 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+}
+.formatBar button
+{
+    padding: .5em;
+    margin: 0 .2em 0 .2em;
+    background-color: #3e3f46;
+    color: #999;
+    transition: .3s;
+}
+.formatBar button:last-child
+{
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 0px;
+}
+.formatBar button:hover
+{
+    background-color: #33a3ee;
+    color: #fff;
+}

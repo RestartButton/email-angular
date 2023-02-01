@@ -1,1 +1,24 @@
-<p>write works!</p>
+<div class="draft">
+    <div>
+        <form>
+            <div class="row">
+                <div>To: </div>
+                <input #to type="text">
+            </div>
+            <div class="row">
+                <div>Subject: </div>
+                <input #subject type="text">
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div #editor class="editor" role="textbox" contenteditable="true" aria-multiline="true" aria-label="Message Body"></div>
+    <div #bottomBar class="bottom">
+        <button class="btnSend" (click)="send()"> SEND </button>
+        <div #formatBar class="formatBar">
+            <button #btnBold (click)="format('strong')"> BOLD </button>
+            <button #btnItalic (click)="format('i')"> ITALIC </button>
+            <button #btnUnderline (click)="format('u')"> UNDERLINE </button>
+        </div>
+    </div>
+</div>
